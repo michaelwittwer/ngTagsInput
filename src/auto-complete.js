@@ -46,6 +46,8 @@ tagsInput.directive('autoComplete', function ($document, $timeout, $sce, $q, tag
 
                 if (el.hasClass('autocomplete')) {
                     autoCompleteEl = el;
+                    el.css('overflow-y', 'scroll');
+                    el.css('height', '200px');
                 }
             });
         }
